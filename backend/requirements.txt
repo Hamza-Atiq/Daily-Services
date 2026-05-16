@@ -1,0 +1,21 @@
+# Google ADK - Agentic Framework
+google-adk>=1.0.0
+
+# FastAPI + Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Firebase Admin SDK
+firebase-admin>=6.6.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# CORS
+# (included in fastapi)
+
+# Pydantic (included with fastapi, but explicit)
+pydantic>=2.0.0
+
+# Math/Distance (stdlib - no install needed)
+# Haversine uses math module

@@ -1,0 +1,280 @@
+[
+  {
+    "id": "p001", "name": "Ali AC Services", "name_urdu": "علی اے سی سروسز",
+    "services": ["ac_repair", "ac_installation", "ac_maintenance"],
+    "specialization": "ac_repair", "experience_years": 12,
+    "certifications": ["HVAC Certified", "Daikin Authorized"],
+    "location": {"sector": "G-11", "lat": 33.6720, "lng": 73.0050},
+    "rating": 4.7, "total_reviews": 342,
+    "recent_reviews": [
+      {"rating": 5, "text": "Excellent! Fixed AC in 30 min", "date": "2026-05-10"},
+      {"rating": 4, "text": "Good work, slightly late", "date": "2026-05-08"},
+      {"rating": 5, "text": "Very professional", "date": "2026-05-05"}
+    ],
+    "reliability_score": 0.94, "on_time_score": 0.91, "cancellation_rate": 0.03,
+    "hourly_rate": 800, "visit_fee": 400,
+    "availability": {"monday": ["09:00-12:00", "14:00-18:00"], "tuesday": ["09:00-18:00"], "wednesday": ["09:00-18:00"], "thursday": ["09:00-18:00"], "friday": ["14:00-18:00"], "saturday": ["09:00-15:00"]},
+    "phone": "+92-300-1234567", "languages": ["urdu", "english"],
+    "tools_available": ["multimeter", "vacuum_pump", "refrigerant_gauge", "leak_detector"],
+    "service_area_km": 15, "response_time_avg_min": 45,
+    "total_jobs_completed": 1250, "risk_score": 0.05
+  },
+  {
+    "id": "p002", "name": "Usman Cooling Center", "name_urdu": "عثمان کولنگ سینٹر",
+    "services": ["ac_repair", "ac_maintenance"],
+    "specialization": "ac_repair", "experience_years": 5,
+    "certifications": [],
+    "location": {"sector": "G-13", "lat": 33.6500, "lng": 72.9750},
+    "rating": 4.1, "total_reviews": 89,
+    "recent_reviews": [
+      {"rating": 3, "text": "Came late but did okay work", "date": "2026-05-12"},
+      {"rating": 2, "text": "Had to call back twice", "date": "2026-05-01"},
+      {"rating": 4, "text": "Fixed it eventually", "date": "2026-04-28"}
+    ],
+    "reliability_score": 0.78, "on_time_score": 0.65, "cancellation_rate": 0.12,
+    "hourly_rate": 600, "visit_fee": 300,
+    "availability": {"monday": ["10:00-17:00"], "tuesday": ["10:00-17:00"], "wednesday": ["10:00-17:00"], "thursday": ["10:00-17:00"], "friday": ["14:00-17:00"], "saturday": ["10:00-14:00"]},
+    "phone": "+92-301-2345678", "languages": ["urdu"],
+    "tools_available": ["multimeter", "basic_toolkit"],
+    "service_area_km": 10, "response_time_avg_min": 90,
+    "total_jobs_completed": 320, "risk_score": 0.22
+  },
+  {
+    "id": "p003", "name": "CoolTech Solutions", "name_urdu": "کول ٹیک سلوشنز",
+    "services": ["ac_repair", "ac_installation", "ac_maintenance"],
+    "specialization": "ac_installation", "experience_years": 8,
+    "certifications": ["HVAC Certified"],
+    "location": {"sector": "F-10", "lat": 33.6920, "lng": 73.0100},
+    "rating": 4.5, "total_reviews": 215,
+    "recent_reviews": [
+      {"rating": 5, "text": "Installed split AC perfectly", "date": "2026-05-11"},
+      {"rating": 4, "text": "Good service, fair price", "date": "2026-05-07"}
+    ],
+    "reliability_score": 0.89, "on_time_score": 0.85, "cancellation_rate": 0.05,
+    "hourly_rate": 900, "visit_fee": 500,
+    "availability": {"monday": ["09:00-17:00"], "tuesday": ["09:00-17:00"], "wednesday": ["09:00-17:00"], "thursday": ["09:00-17:00"], "friday": ["09:00-13:00"], "saturday": ["09:00-14:00"]},
+    "phone": "+92-302-3456789", "languages": ["urdu", "english"],
+    "tools_available": ["vacuum_pump", "manifold_gauge", "pipe_bender", "flaring_tool"],
+    "service_area_km": 20, "response_time_avg_min": 60,
+    "total_jobs_completed": 780, "risk_score": 0.08
+  },
+  {
+    "id": "p004", "name": "Rana Plumbing Works", "name_urdu": "رانا پلمبنگ ورکس",
+    "services": ["plumbing"],
+    "specialization": "plumbing", "experience_years": 15,
+    "certifications": ["Master Plumber"],
+    "location": {"sector": "G-9", "lat": 33.6900, "lng": 73.0350},
+    "rating": 4.8, "total_reviews": 520,
+    "recent_reviews": [
+      {"rating": 5, "text": "Fixed pipe burst in emergency", "date": "2026-05-13"},
+      {"rating": 5, "text": "Very reliable, always on time", "date": "2026-05-09"}
+    ],
+    "reliability_score": 0.96, "on_time_score": 0.93, "cancellation_rate": 0.02,
+    "hourly_rate": 700, "visit_fee": 300,
+    "availability": {"monday": ["08:00-18:00"], "tuesday": ["08:00-18:00"], "wednesday": ["08:00-18:00"], "thursday": ["08:00-18:00"], "friday": ["14:00-18:00"], "saturday": ["08:00-16:00"], "sunday": ["10:00-14:00"]},
+    "phone": "+92-303-4567890", "languages": ["urdu", "punjabi"],
+    "tools_available": ["pipe_wrench", "plunger", "drain_snake", "soldering_kit", "pipe_cutter"],
+    "service_area_km": 18, "response_time_avg_min": 30,
+    "total_jobs_completed": 2100, "risk_score": 0.03
+  },
+  {
+    "id": "p005", "name": "Sajid Electric & Wiring", "name_urdu": "ساجد الیکٹرک",
+    "services": ["electrical"],
+    "specialization": "electrical", "experience_years": 10,
+    "certifications": ["Licensed Electrician"],
+    "location": {"sector": "I-8", "lat": 33.6950, "lng": 73.0750},
+    "rating": 4.6, "total_reviews": 280,
+    "recent_reviews": [
+      {"rating": 5, "text": "Fixed complex wiring issue safely", "date": "2026-05-12"},
+      {"rating": 4, "text": "Knows his stuff, recommended", "date": "2026-05-06"}
+    ],
+    "reliability_score": 0.90, "on_time_score": 0.88, "cancellation_rate": 0.04,
+    "hourly_rate": 750, "visit_fee": 350,
+    "availability": {"monday": ["09:00-17:00"], "tuesday": ["09:00-17:00"], "wednesday": ["09:00-17:00"], "thursday": ["09:00-17:00"], "friday": ["09:00-13:00"], "saturday": ["10:00-15:00"]},
+    "phone": "+92-304-5678901", "languages": ["urdu", "english"],
+    "tools_available": ["multimeter", "wire_stripper", "circuit_tester", "drill"],
+    "service_area_km": 15, "response_time_avg_min": 50,
+    "total_jobs_completed": 950, "risk_score": 0.07
+  },
+  {
+    "id": "p006", "name": "Fatima Home Tutoring", "name_urdu": "فاطمہ ہوم ٹیوشن",
+    "services": ["tutoring"],
+    "specialization": "tutoring", "experience_years": 7,
+    "certifications": ["M.Ed Education", "IELTS Trainer"],
+    "location": {"sector": "F-8", "lat": 33.7100, "lng": 73.0450},
+    "rating": 4.9, "total_reviews": 180,
+    "recent_reviews": [
+      {"rating": 5, "text": "My daughter's grades improved greatly", "date": "2026-05-10"},
+      {"rating": 5, "text": "Excellent math teacher", "date": "2026-05-03"}
+    ],
+    "reliability_score": 0.97, "on_time_score": 0.95, "cancellation_rate": 0.01,
+    "hourly_rate": 1000, "visit_fee": 0,
+    "availability": {"monday": ["14:00-20:00"], "tuesday": ["14:00-20:00"], "wednesday": ["14:00-20:00"], "thursday": ["14:00-20:00"], "saturday": ["10:00-18:00"]},
+    "phone": "+92-305-6789012", "languages": ["urdu", "english"],
+    "tools_available": [],
+    "service_area_km": 12, "response_time_avg_min": 120,
+    "total_jobs_completed": 450, "risk_score": 0.02
+  },
+  {
+    "id": "p007", "name": "Sparkle Clean Services", "name_urdu": "سپارکل کلین سروسز",
+    "services": ["cleaning"],
+    "specialization": "cleaning", "experience_years": 4,
+    "certifications": [],
+    "location": {"sector": "G-10", "lat": 33.6810, "lng": 73.0180},
+    "rating": 4.3, "total_reviews": 156,
+    "recent_reviews": [
+      {"rating": 4, "text": "Good deep cleaning, takes time", "date": "2026-05-11"},
+      {"rating": 5, "text": "House looks brand new!", "date": "2026-05-04"}
+    ],
+    "reliability_score": 0.85, "on_time_score": 0.80, "cancellation_rate": 0.08,
+    "hourly_rate": 500, "visit_fee": 0,
+    "availability": {"monday": ["08:00-16:00"], "tuesday": ["08:00-16:00"], "wednesday": ["08:00-16:00"], "thursday": ["08:00-16:00"], "friday": ["08:00-12:00"], "saturday": ["08:00-14:00"]},
+    "phone": "+92-306-7890123", "languages": ["urdu"],
+    "tools_available": ["vacuum", "steam_cleaner", "cleaning_supplies"],
+    "service_area_km": 10, "response_time_avg_min": 60,
+    "total_jobs_completed": 520, "risk_score": 0.10
+  },
+  {
+    "id": "p008", "name": "Kamran Auto Workshop", "name_urdu": "کامران آٹو ورکشاپ",
+    "services": ["mechanic"],
+    "specialization": "mechanic", "experience_years": 18,
+    "certifications": ["Toyota Certified Technician"],
+    "location": {"sector": "I-9", "lat": 33.6850, "lng": 73.0600},
+    "rating": 4.4, "total_reviews": 410,
+    "recent_reviews": [
+      {"rating": 5, "text": "Engine diagnosis was spot on", "date": "2026-05-13"},
+      {"rating": 3, "text": "Good but expensive", "date": "2026-05-07"}
+    ],
+    "reliability_score": 0.88, "on_time_score": 0.82, "cancellation_rate": 0.06,
+    "hourly_rate": 800, "visit_fee": 500,
+    "availability": {"monday": ["09:00-18:00"], "tuesday": ["09:00-18:00"], "wednesday": ["09:00-18:00"], "thursday": ["09:00-18:00"], "friday": ["09:00-13:00"], "saturday": ["09:00-15:00"]},
+    "phone": "+92-307-8901234", "languages": ["urdu", "english"],
+    "tools_available": ["OBD_scanner", "jack", "wrench_set", "diagnostic_computer"],
+    "service_area_km": 25, "response_time_avg_min": 40,
+    "total_jobs_completed": 1800, "risk_score": 0.06
+  },
+  {
+    "id": "p009", "name": "Nazia Beauty Studio", "name_urdu": "نازیہ بیوٹی اسٹوڈیو",
+    "services": ["beauty"],
+    "specialization": "beauty", "experience_years": 9,
+    "certifications": ["Certified Beautician", "Bridal Makeup Expert"],
+    "location": {"sector": "F-6", "lat": 33.7280, "lng": 73.0600},
+    "rating": 4.8, "total_reviews": 290,
+    "recent_reviews": [
+      {"rating": 5, "text": "Amazing bridal makeup!", "date": "2026-05-14"},
+      {"rating": 5, "text": "Always perfect results", "date": "2026-05-09"}
+    ],
+    "reliability_score": 0.93, "on_time_score": 0.90, "cancellation_rate": 0.03,
+    "hourly_rate": 700, "visit_fee": 0,
+    "availability": {"monday": ["10:00-19:00"], "tuesday": ["10:00-19:00"], "wednesday": ["10:00-19:00"], "thursday": ["10:00-19:00"], "friday": ["14:00-19:00"], "saturday": ["10:00-18:00"], "sunday": ["12:00-17:00"]},
+    "phone": "+92-308-9012345", "languages": ["urdu", "english"],
+    "tools_available": ["makeup_kit", "hair_tools", "skin_care_products"],
+    "service_area_km": 12, "response_time_avg_min": 90,
+    "total_jobs_completed": 680, "risk_score": 0.04
+  },
+  {
+    "id": "p010", "name": "Tariq Paint & Decor", "name_urdu": "طارق پینٹ اینڈ ڈیکور",
+    "services": ["painting"],
+    "specialization": "painting", "experience_years": 14,
+    "certifications": [],
+    "location": {"sector": "G-8", "lat": 33.6970, "lng": 73.0480},
+    "rating": 4.5, "total_reviews": 195,
+    "recent_reviews": [
+      {"rating": 5, "text": "Beautiful finish, neat work", "date": "2026-05-08"},
+      {"rating": 4, "text": "Good painter, fair price", "date": "2026-04-30"}
+    ],
+    "reliability_score": 0.87, "on_time_score": 0.84, "cancellation_rate": 0.05,
+    "hourly_rate": 550, "visit_fee": 0,
+    "availability": {"monday": ["08:00-17:00"], "tuesday": ["08:00-17:00"], "wednesday": ["08:00-17:00"], "thursday": ["08:00-17:00"], "friday": ["08:00-12:00"], "saturday": ["08:00-15:00"]},
+    "phone": "+92-309-0123456", "languages": ["urdu", "punjabi"],
+    "tools_available": ["paint_sprayer", "rollers", "brushes", "scaffolding"],
+    "service_area_km": 20, "response_time_avg_min": 60,
+    "total_jobs_completed": 850, "risk_score": 0.06
+  },
+  {
+    "id": "p011", "name": "Aslam Woodworks", "name_urdu": "اسلم ووڈ ورکس",
+    "services": ["carpentry"],
+    "specialization": "carpentry", "experience_years": 20,
+    "certifications": ["Master Carpenter"],
+    "location": {"sector": "I-10", "lat": 33.6750, "lng": 73.0450},
+    "rating": 4.6, "total_reviews": 310,
+    "recent_reviews": [
+      {"rating": 5, "text": "Made beautiful kitchen cabinets", "date": "2026-05-12"},
+      {"rating": 5, "text": "Expert craftsman, highly recommend", "date": "2026-05-05"}
+    ],
+    "reliability_score": 0.91, "on_time_score": 0.86, "cancellation_rate": 0.04,
+    "hourly_rate": 700, "visit_fee": 400,
+    "availability": {"monday": ["09:00-17:00"], "tuesday": ["09:00-17:00"], "wednesday": ["09:00-17:00"], "thursday": ["09:00-17:00"], "saturday": ["09:00-14:00"]},
+    "phone": "+92-310-1234567", "languages": ["urdu"],
+    "tools_available": ["circular_saw", "drill", "planer", "chisel_set", "sander"],
+    "service_area_km": 15, "response_time_avg_min": 120,
+    "total_jobs_completed": 1100, "risk_score": 0.05
+  },
+  {
+    "id": "p012", "name": "PestFree Solutions", "name_urdu": "پیسٹ فری سلوشنز",
+    "services": ["pest_control"],
+    "specialization": "pest_control", "experience_years": 6,
+    "certifications": ["Licensed Pest Control"],
+    "location": {"sector": "H-8", "lat": 33.6930, "lng": 73.0600},
+    "rating": 4.4, "total_reviews": 145,
+    "recent_reviews": [
+      {"rating": 4, "text": "Cockroach problem solved", "date": "2026-05-11"},
+      {"rating": 5, "text": "Thorough fumigation", "date": "2026-05-03"}
+    ],
+    "reliability_score": 0.86, "on_time_score": 0.83, "cancellation_rate": 0.07,
+    "hourly_rate": 600, "visit_fee": 300,
+    "availability": {"monday": ["09:00-16:00"], "tuesday": ["09:00-16:00"], "wednesday": ["09:00-16:00"], "thursday": ["09:00-16:00"], "friday": ["09:00-13:00"], "saturday": ["09:00-14:00"]},
+    "phone": "+92-311-2345678", "languages": ["urdu", "english"],
+    "tools_available": ["sprayer", "fumigation_equipment", "insecticides"],
+    "service_area_km": 20, "response_time_avg_min": 60,
+    "total_jobs_completed": 480, "risk_score": 0.09
+  },
+  {
+    "id": "p013", "name": "Bilal AC & Refrigeration", "name_urdu": "بلال اے سی",
+    "services": ["ac_repair", "ac_maintenance"],
+    "specialization": "ac_repair", "experience_years": 9,
+    "certifications": ["HVAC Certified"],
+    "location": {"sector": "G-14", "lat": 33.6380, "lng": 72.9600},
+    "rating": 4.3, "total_reviews": 178,
+    "recent_reviews": [{"rating": 4, "text": "Good AC repair", "date": "2026-05-10"}],
+    "reliability_score": 0.85, "on_time_score": 0.80, "cancellation_rate": 0.06,
+    "hourly_rate": 700, "visit_fee": 350,
+    "availability": {"monday": ["09:00-17:00"], "tuesday": ["09:00-17:00"], "wednesday": ["09:00-17:00"], "thursday": ["09:00-17:00"], "saturday": ["09:00-14:00"]},
+    "phone": "+92-312-3456789", "languages": ["urdu"],
+    "tools_available": ["multimeter", "vacuum_pump"],
+    "service_area_km": 12, "response_time_avg_min": 50,
+    "total_jobs_completed": 620, "risk_score": 0.10
+  },
+  {
+    "id": "p014", "name": "Hamza Quick Plumbing", "name_urdu": "حمزہ کوئیک پلمبنگ",
+    "services": ["plumbing"],
+    "specialization": "plumbing", "experience_years": 8,
+    "certifications": [],
+    "location": {"sector": "G-13", "lat": 33.6520, "lng": 72.9780},
+    "rating": 4.2, "total_reviews": 200,
+    "recent_reviews": [{"rating": 4, "text": "Fast work", "date": "2026-05-09"}],
+    "reliability_score": 0.83, "on_time_score": 0.79, "cancellation_rate": 0.09,
+    "hourly_rate": 600, "visit_fee": 250,
+    "availability": {"monday": ["08:00-17:00"], "tuesday": ["08:00-17:00"], "wednesday": ["08:00-17:00"], "thursday": ["08:00-17:00"], "friday": ["14:00-17:00"], "saturday": ["08:00-14:00"]},
+    "phone": "+92-313-4567890", "languages": ["urdu", "punjabi"],
+    "tools_available": ["pipe_wrench", "drain_snake"],
+    "service_area_km": 10, "response_time_avg_min": 35,
+    "total_jobs_completed": 700, "risk_score": 0.12
+  },
+  {
+    "id": "p015", "name": "Zain Electricals", "name_urdu": "زین الیکٹریکلز",
+    "services": ["electrical"],
+    "specialization": "electrical", "experience_years": 6,
+    "certifications": [],
+    "location": {"sector": "G-12", "lat": 33.6600, "lng": 72.9900},
+    "rating": 4.0, "total_reviews": 120,
+    "recent_reviews": [{"rating": 4, "text": "Fixed wiring issue", "date": "2026-05-06"}],
+    "reliability_score": 0.80, "on_time_score": 0.75, "cancellation_rate": 0.10,
+    "hourly_rate": 600, "visit_fee": 300,
+    "availability": {"monday": ["09:00-17:00"], "tuesday": ["09:00-17:00"], "wednesday": ["09:00-17:00"], "thursday": ["09:00-17:00"], "saturday": ["09:00-14:00"]},
+    "phone": "+92-314-5678901", "languages": ["urdu"],
+    "tools_available": ["multimeter", "wire_stripper"],
+    "service_area_km": 12, "response_time_avg_min": 55,
+    "total_jobs_completed": 380, "risk_score": 0.15
+  }
+]
