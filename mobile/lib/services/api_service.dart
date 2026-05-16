@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  // Change this to your backend URL (Cloud Run URL after deployment)
-  static const String baseUrl = 'http://10.0.2.2:8080'; // Android emulator
-  // static const String baseUrl = 'http://localhost:8080'; // iOS simulator / web
-  // static const String baseUrl = 'https://your-cloud-run-url.run.app'; // Production
+  // Backend URL — update this if Railway URL changes
+  static const String baseUrl = 'https://daily-services-production.up.railway.app';
+  // static const String baseUrl = 'http://10.0.2.2:8080'; // Android emulator (local dev)
+  // static const String baseUrl = 'http://localhost:8080'; // iOS simulator / web (local dev)
 
   String? _sessionId;
 
