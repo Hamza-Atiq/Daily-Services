@@ -23,6 +23,10 @@ async def fallback_to_groq(
     )
 
     try:
+        # ADK's LiteLlm.generate_content_async uses `llm_request.model or self.model`,
+        # so we must overwrite the model on the request — otherwise LiteLLM tries to
+        # route the original Gemini model name through Vertex AI and fails.
+        llm_request.model = FALLBACK_MODEL
         fallback_llm = LiteLlm(model=FALLBACK_MODEL)
         last_response: Optional[LlmResponse] = None
         async for response in fallback_llm.generate_content_async(llm_request, stream=False):
