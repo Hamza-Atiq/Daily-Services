@@ -1,5 +1,5 @@
 import logging
-from google.adk.agents import CallbackContext
+from google.adk.agents.callback_context import CallbackContext
 from google.adk.models.llm_request import LlmRequest
 from google.adk.models.registry import LLMRegistry
 
