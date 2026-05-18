@@ -1,26 +1,33 @@
 import logging
+from typing import Optional
+
 from google.adk.agents.callback_context import CallbackContext
 from google.adk.models.llm_request import LlmRequest
-from google.adk.models.registry import LLMRegistry
+from google.adk.models.llm_response import LlmResponse
+from google.adk.models.lite_llm import LiteLlm
 
 logger = logging.getLogger(__name__)
+
+FALLBACK_MODEL = "groq/llama-3.3-70b-versatile"
+
 
 async def fallback_to_groq(
     callback_context: CallbackContext,
     llm_request: LlmRequest,
     error: Exception,
-):
-    """Fallback callback to run a Groq Llama model if Gemini fails."""
+) -> Optional[LlmResponse]:
+    """on_model_error_callback: route to Groq via LiteLLM when Gemini fails."""
     logger.error(
-        f"Primary model {llm_request.model} failed: {error}. "
-        "Falling back to groq/llama-3.3-70b-versatile."
+        "Primary model %s failed: %s. Falling back to %s.",
+        llm_request.model, error, FALLBACK_MODEL,
     )
 
-    llm_request.model = "groq/llama-3.3-70b-versatile"
-
     try:
-        fallback_llm = LLMRegistry.new_llm(llm_request.model)
-        return await fallback_llm.generate_content(llm_request)
+        fallback_llm = LiteLlm(model=FALLBACK_MODEL)
+        last_response: Optional[LlmResponse] = None
+        async for response in fallback_llm.generate_content_async(llm_request, stream=False):
+            last_response = response
+        return last_response
     except Exception as fallback_err:
-        logger.error(f"Fallback model also failed: {fallback_err}")
-        raise fallback_err
+        logger.exception("Fallback model also failed: %s", fallback_err)
+        return None
