@@ -13,11 +13,12 @@ from service_orchestrator.sub_agents.booking_agent import booking_agent
 from service_orchestrator.sub_agents.followup_agent import followup_agent
 from service_orchestrator.sub_agents.dispute_agent import dispute_agent
 from service_orchestrator.guardrails.input_guardrail import input_safety_guardrail
+from service_orchestrator.fallbacks import fallback_to_groq
 
 
 root_agent = Agent(
     name="service_orchestrator",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Main orchestrator for the AI Service Platform for Pakistan's informal economy.",
     instruction="""You are the main AI Service Orchestrator for a home services platform in Pakistan.
 You help users find, book, and manage service providers (plumbers, electricians, AC technicians, 
@@ -89,4 +90,5 @@ Booking ID: [ID]"
         dispute_agent,
     ],
     before_agent_callback=input_safety_guardrail,
+    on_model_error_callback=fallback_to_groq,
 )

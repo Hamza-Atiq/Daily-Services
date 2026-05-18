@@ -4,6 +4,7 @@ Handles booking creation, availability checks, cancellation, and rescheduling.
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 from service_orchestrator.tools.booking_tools import (
     check_provider_availability,
     create_booking,
@@ -21,7 +22,8 @@ from service_orchestrator.tools.notification_tools import (
 
 booking_agent = Agent(
     name="booking_manager",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Manages all booking operations: creating bookings, checking availability, cancelling, and rescheduling. Use this agent when the user wants to book, cancel, or modify a service appointment.",
     instruction="""You are the Booking Manager agent. You handle the full booking lifecycle.
 

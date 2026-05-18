@@ -4,6 +4,7 @@ Handles complaints, disputes, refunds, and escalations.
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 from service_orchestrator.tools.booking_tools import get_booking_by_id, cancel_booking
 from service_orchestrator.tools.feedback_tools import collect_feedback, get_provider_reputation
 from service_orchestrator.tools.notification_tools import simulate_sms
@@ -11,7 +12,8 @@ from service_orchestrator.tools.notification_tools import simulate_sms
 
 dispute_agent = Agent(
     name="dispute_handler",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Handles all disputes, complaints, and escalations including no-shows, quality complaints, price disagreements, and refund requests. Use this agent when a user has a problem with a completed or ongoing service.",
     instruction="""You are the Dispute Handler agent. You mediate between customers and providers fairly.
 

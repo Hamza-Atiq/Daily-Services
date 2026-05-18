@@ -4,6 +4,7 @@ Specialized in electrical services.
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 from service_orchestrator.tools.provider_tools import find_providers, rank_providers
 from service_orchestrator.tools.pricing_tools import calculate_price
 from service_orchestrator.tools.location_tools import calculate_distance
@@ -11,7 +12,8 @@ from service_orchestrator.tools.location_tools import calculate_distance
 
 electrical_agent = Agent(
     name="electrical_specialist",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Handles all electrical service requests including wiring, switches, circuit breakers, fans, and lighting. Delegate when service type is electrical.",
     instruction="""You are an electrical specialist agent for Pakistan's informal economy service platform.
 

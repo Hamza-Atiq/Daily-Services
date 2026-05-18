@@ -5,10 +5,12 @@ Extracts service type, location, urgency, time, budget, and preferences.
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 
 intent_parser_agent = Agent(
     name="intent_parser",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Parses and understands multilingual user service requests. Use this agent FIRST for any new user message to extract structured intent.",
     instruction="""You are the Intent Parser agent for a Pakistan-based home service platform.
 

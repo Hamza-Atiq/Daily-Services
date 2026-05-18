@@ -4,6 +4,7 @@ Specialized in home cleaning, deep cleaning, and related services.
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 from service_orchestrator.tools.provider_tools import find_providers, rank_providers
 from service_orchestrator.tools.pricing_tools import calculate_price
 from service_orchestrator.tools.location_tools import calculate_distance
@@ -11,7 +12,8 @@ from service_orchestrator.tools.location_tools import calculate_distance
 
 cleaning_agent = Agent(
     name="cleaning_specialist",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Handles all cleaning service requests including home cleaning, deep cleaning, carpet cleaning, and office cleaning. Delegate when service type is cleaning.",
     instruction="""You are a cleaning specialist agent for Pakistan's informal economy service platform.
 

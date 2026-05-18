@@ -4,6 +4,7 @@ Handles reminders, en-route updates, service completion, and feedback collection
 """
 
 from google.adk.agents import Agent
+from service_orchestrator.fallbacks import fallback_to_groq
 from service_orchestrator.tools.notification_tools import (
     simulate_sms,
     schedule_reminder,
@@ -18,7 +19,8 @@ from service_orchestrator.tools.booking_tools import get_booking_by_id
 
 followup_agent = Agent(
     name="followup_manager",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    on_model_error_callback=fallback_to_groq,
     description="Manages post-booking follow-up: reminders, en-route tracking, service completion, and feedback collection. Use this agent for service quality loop tasks.",
     instruction="""You are the Follow-Up Manager agent. You ensure service quality throughout the lifecycle.
 
