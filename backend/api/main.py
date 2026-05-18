@@ -8,8 +8,13 @@ import sys
 import json
 import uuid
 import asyncio
+import logging
+import traceback
 from datetime import datetime
 from contextlib import asynccontextmanager
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+logger = logging.getLogger("api")
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -208,7 +213,8 @@ async def chat(request: ChatRequest):
             timestamp=datetime.now().isoformat(),
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Agent error: {str(e)}")
+        logger.error("Agent error on /chat: %s\n%s", e, traceback.format_exc())
+        raise HTTPException(status_code=500, detail=f"Agent error: {type(e).__name__}: {e}")
 
 
 @app.post("/dispute")
